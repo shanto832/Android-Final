@@ -285,5 +285,14 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#000000"
             android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/assess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="assess"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </FrameLayout>

@@ -258,7 +258,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Manage extends AppCompatActivity {
 
-    private Button addTable, btnAddFood, btnSeeCurrentOrders, btnTransactionHistory, btnCustomerDetails, btnWaiterDetails, btnTakeOrder;
+    private Button assess,addTable, btnAddFood, btnSeeCurrentOrders, btnTransactionHistory, btnCustomerDetails, btnWaiterDetails, btnTakeOrder;
     private ImageView sharpImage, blurredImage;
 
     @Override
@@ -274,6 +274,7 @@ public class Manage extends AppCompatActivity {
         btnWaiterDetails = findViewById(R.id.btnWaiterDetails);
         btnTakeOrder = findViewById(R.id.btnTakeOrder);
         addTable = findViewById(R.id.addTable);
+        assess = findViewById(R.id.assess);
 
         // Initialize image views for sharp and blurred images
         sharpImage = findViewById(R.id.sharpImage);
@@ -299,6 +300,7 @@ public class Manage extends AppCompatActivity {
         animateButton(btnWaiterDetails, 400);
         animateButton(btnTakeOrder, 500);
         animateButton(addTable, 600);
+        animateButton(assess, 600);
 
     }
 
@@ -335,6 +337,10 @@ public class Manage extends AppCompatActivity {
         });
         addTable.setOnClickListener(v -> {
             Intent intent = new Intent(Manage.this, ManageTableActivity.class);
+            startActivity(intent);
+        });
+        assess.setOnClickListener(v -> {
+            Intent intent = new Intent(Manage.this, FoodStockActivity.class);
             startActivity(intent);
         });
     }

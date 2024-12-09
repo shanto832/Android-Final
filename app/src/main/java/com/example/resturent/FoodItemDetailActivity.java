@@ -107,6 +107,7 @@ public class FoodItemDetailActivity extends AppCompatActivity {
                                         orderData.put("userName", userName); // Store customer name
                                         orderData.put("userPhoneNumber", userPhoneNumber); // Store customer phone number
                                         orderData.put("status", "in-progress"); // Order initially in-progress
+                                        orderData.put("isViewed", false); // New field added
 
                                         // Add order data
                                         orderReference = db.collection("OrderWithTable").document();

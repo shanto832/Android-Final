@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Resturent"
         tools:targetApi="35">
         <activity
+            android:name=".FoodStockActivity"
+            android:exported="false" />
+        <activity
             android:name=".TableAndCustomerActivity"
             android:exported="false" />
         <activity
